@@ -1,6 +1,7 @@
 exports.up = function (knex) {
   return knex.schema.createTable("account", (table) => {
     table.increments();
+    table.boolean("is_renter");
     table.string("username").unique();
     table.string("password");
     table.string("facebook_username").unique();

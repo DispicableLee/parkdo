@@ -10,6 +10,7 @@ exports.seed = function (knex) {
       // Inserts seed entries
       return knex("account").insert([
         {
+          is_renter: true,
           username: "moryah",
           password: hashedPassword,
           email: "moryah@gmail.com",
@@ -18,6 +19,7 @@ exports.seed = function (knex) {
           phone: 98789583,
         },
         {
+          is_renter: false,
           username: "jason",
           password: hashedPassword,
           email: "jason@gmail.com",
@@ -26,6 +28,7 @@ exports.seed = function (knex) {
           phone: 63703506,
         },
         {
+          is_renter: true,
           username: "robert",
           password: hashedPassword,
           email: "rob@gmail.com",
